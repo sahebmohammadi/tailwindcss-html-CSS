@@ -4,10 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./tailwind.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
-    <link href="./tailwind.css" rel="stylesheet" />
   </head>
-  <body>
-    <h1 class="">hello world !</h1>
+  <body class="">
+    <!-- Toggle B -->
+    <section class="flex justify-center items-center h-screen">
+      <div
+        class="
+          rounded-xl
+          p-8
+          flex flex-col
+          items-center
+          ring-1 
+          ring-gray-100
+          shadow-sm
+          space-y-4
+        "
+      >
+        <div class="flex items-center justify-center space-x-2">
+          <i class="far fa-sun text-2xl text-secondary"></i>
+          <label for="toggleB" class="flex items-center cursor-pointer">
+            <!-- toggle -->
+            <div class="relative">
+              <!-- input -->
+              <input type="checkbox" id="toggleB" class="sr-only" />
+              <!-- line -->
+              <div class="block bg-secondary w-16 h-8 rounded-full p-0"></div>
+              <!-- dot -->
+              <div
+                class="
+                  dot
+                  absolute
+                  left-1
+                  top-1
+                  bg-white
+                  w-6
+                  h-6
+                  rounded-full
+                  transition
+                  duration-500
+                "
+              ></div>
+            </div>
+            <!-- label -->
+          </label>
+          <i class="fas fa-moon text-secondary text-2xl"></i>
+        </div>
+        <div class="text-gray-700 font-medium">Dark Mode!</div>
+      </div>
+    </section>
   </body>
 </html>
+

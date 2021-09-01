@@ -5,3 +5,7 @@
 html {
   font-size: 16px;
 }
+input:checked ~ .dot {
+  transform: translateX(130%);
+  background-color: #22d3ee;
+}
